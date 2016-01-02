@@ -8,4 +8,4 @@ Please install protractor and cucumber first, and run command
 $ protractor  index_search_conf.js
 ```
 
-[![Everything Is AWESOME](https://i.ytimg.com/vi/0mcZ93eze0Y/3.jpg?time=1451713020708)](https://www.youtube.com/watch?v=0mcZ93eze0Y "Everything Is AWESOME")
+[![bdd-simple-demo](https://drive.google.com/file/d/0B7KYAXyiE4OYWnQ2ZjVMU3BtSTQ/view?usp=sharing)](https://www.youtube.com/watch?v=0mcZ93eze0Y "bdd-simple-demo")
