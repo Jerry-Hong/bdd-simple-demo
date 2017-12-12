@@ -1,3 +1,4 @@
+// action
 const GET_ENDPOINT = 'GET_ENDPOINT';
 const GET_ENDPOINT_COMPLETE = 'GET_ENDPOINT_COMPLETE';
 const getEndpoint = () => ({
@@ -47,3 +48,12 @@ const connectServerEpic = (action$, store) => action$.ofType(CONNECT_SERVER)
   .do(store.dispatch)
   .mergeMap(() => action$.ofType(GET_ENDPOINT_COMPLETE))
   .map(() => getToken());
+
+
+
+// component
+import {
+  connectServer,
+} from '../actions';
+// ...
+this.props.connectServer();
