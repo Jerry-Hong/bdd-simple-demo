@@ -44,12 +44,11 @@ const connectServer = () => ({
   type: CONNECT_TWILIO,
 });
 const connectServerEpic = (action$, store) => action$.ofType(CONNECT_SERVER)
-  .map(() => getEndpoint())
-  .do(store.dispatch)
+  .map(() => getEndpoint());
+            
+const getEndpointCompleteEpic = (action$, store) => action$.ofType(CONNECT_SERVER)
   .mergeMap(() => action$.ofType(GET_ENDPOINT_COMPLETE))
   .map(() => getToken());
-
-
 
 // component
 import {
